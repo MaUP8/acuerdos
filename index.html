@@ -1437,7 +1437,7 @@ function generarAcuerdoTemplate(){
 document.addEventListener('DOMContentLoaded',()=>{const df=document.getElementById('acuerdo-fecha');if(df)df.value=new Date().toISOString().slice(0,10)});
 
 // === CLOUD BACKEND (Google Sheets via Apps Script) ===
-const CLOUD_URL_DEFAULT='https://script.google.com/macros/s/AKfycbz6Y4GaYiyKKXIx2zcJrPtjSmbOiVFAb8dv3um8AIY4qETFQbTQ_oU-Q4ySUsYzkobc/exec';
+const CLOUD_URL_DEFAULT='https://script.google.com/macros/s/AKfycbzkIUnuAKXr7IoUTQ4T5fQV-NF9rNaZErLemOSZotURRxS951cLtDIDqlKIuRvGMxhy/exec';
 const SHEET_URL_DEFAULT='https://docs.google.com/spreadsheets/d/1Jf2r0V84Y6i5Imgl4xsiR0CNm5ENCgS5SZvDxiXDcBw/edit';
 function getCloudURL(){return localStorage.getItem('sim_cloud_url_v2')||CLOUD_URL_DEFAULT}
 function getSheetURL(){return localStorage.getItem('sim_sheet_url_v2')||SHEET_URL_DEFAULT}
